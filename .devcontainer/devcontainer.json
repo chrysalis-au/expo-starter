@@ -20,7 +20,7 @@
     }
   },
 
-  "postCreateCommand": "npm install -g @expo/cli",
+  "postCreateCommand": "npm install",
 
   "customizations": {
     "vscode": {
