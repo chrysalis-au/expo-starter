@@ -1,0 +1,33 @@
+{
+  "name": "Expo Starter",
+
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+
+  "forwardPorts": [8081, 19000],
+
+  "portsAttributes": {
+    "8081": {
+      "label": "Expo Metro Bundler",
+      "onAutoForward": "notify"
+    },
+    "19000": {
+      "label": "Expo Dev Server",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "postCreateCommand": "npm install -g @expo/cli",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
